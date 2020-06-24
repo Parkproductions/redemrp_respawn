@@ -41,8 +41,7 @@ Citizen.CreateThread(function()
 				Wait(0)
 				DrawTxt(Config.PressRespawn, 0.50, 0.45, 1.0, 1.0, true, 255, 255, 255, 255, true)
 				if IsControlJustReleased(0, 0xDFF812F9) then
-				TriggerEvent('parks_death:death_tax', _target, function(user)
-				print('Trigger:death_tax')	
+				TriggerServerEvent("parks_death:death_tax")
 				end)
 				pressed = true
 				end
