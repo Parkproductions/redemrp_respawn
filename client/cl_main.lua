@@ -54,6 +54,7 @@ Citizen.CreateThread(function()
 end)
 
 function respawn()
+	print('respawn_func')
 	SendNUIMessage({
 		type = 1,
 		showMap = true
